@@ -138,6 +138,11 @@ JOIN
        location;
 ```     
 # Q5:What s the total number of wins & loss in retained players & not retained players?
+There is not a huge difference between the loss & win matched. But retained peole have played more matched so their win loss ratio is more than the players who have not retained.
+|total wins of retained players 330047|	
+|total loss of retained players 329708 |
+|total wins of non-retained players 79459|
+|total loss of non-retained players 79759|
 ![Total Wins   Loss of Retained   Non-Retained layers](https://user-images.githubusercontent.com/94933743/156071449-46725b28-8867-4184-b716-51e03d85c35c.png)
 
 We came to know that total wins of retained players are 330047 & total wins of not retained players are 79459.

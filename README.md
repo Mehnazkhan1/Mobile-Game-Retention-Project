@@ -15,6 +15,8 @@ The SQL table should be including the folloing columns:
 4-The fractional retention (the third column divided by the second column).
 
 # Q1: Is 30-day rolling retention increasing or decreasing over the lifecycle of the game?
+
+
 Querry:
 SELECT
     joined Day_joined,
@@ -49,6 +51,8 @@ Given the data above, we observed that from the trendline, overall, the retentio
 In this analsis it looks like this game is equally famous in all the locations because we could see a huge difference in numbers.
 Location with Retention
 ![image](https://user-images.githubusercontent.com/94933743/155808998-68e3f065-0f0d-4e1a-a001-6256c468241e.png)
+
+
 SELECT
       DISTINCT p.location AS location,
       COUNT(DISTINCT p.player_id) AS players,
@@ -72,6 +76,7 @@ ORDER BY
  # Q 3:Do players with rolling 30-day retention spend more?
 Querry
 ----
+
 SELECT ROUND(SUM(sum_price),2) AS sum_total_spend,
        retention_table.retention_status
 FROM
@@ -112,7 +117,9 @@ JOIN
  
  # Q4: What is the average age of player for this game?
   The average age of playe is in 20s.
-  Querry
+ 
+ 
+ Querry
   SELECT
       DISTINCT location,
       ROUND(avg(age) over (partition by location),2) as max_age_player,
@@ -126,6 +133,8 @@ JOIN
 # Q5:What s the total number of wins & loss in retained players & not retained players?
 We came to know that total wins of retained players are 330047 & total wins of not retained players are 79459.
 Total number of loss in retained player are 329708 and not retained players are 79759.
+
+
 Querry
 SELECT 
 COUNT(player_id) total_players, 

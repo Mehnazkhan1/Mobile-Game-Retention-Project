@@ -53,9 +53,9 @@ Given the data above, we observed that from the trendline, overall, the retentio
 # Q2: Do players with rolling 30-day retention come from specific regions?
 In this analsis it looks like this game is equally famous in all the locations because we could see a huge difference in numbers.
 Location with Retention
-![image](https://user-images.githubusercontent.com/94933743/155808998-68e3f065-0f0d-4e1a-a001-6256c468241e.png)
+![Africa, Asia, Europe, North America, Oceania…](https://user-images.githubusercontent.com/94933743/156069409-204e4d98-3edf-4f16-bbd8-4ff7fdd2f332.png)
 
-
+```
 SELECT
       DISTINCT p.location AS location,
       COUNT(DISTINCT p.player_id) AS players,
@@ -75,11 +75,11 @@ GROUP BY
       p.location
 ORDER BY
       players DESC;
-  
+```  
  # Q 3:Do players with rolling 30-day retention spend more?
 Querry
 ----
-
+```
 SELECT ROUND(SUM(sum_price),2) AS sum_total_spend,
        retention_table.retention_status
 FROM
@@ -116,13 +116,14 @@ JOIN
     ON
     total_spends.player_id = retention_table.player_id
  GROUP BY retention_table.retention_status;
-   
+```   
  
  # Q4: What is the average age of player for this game?
   The average age of playe is in 20s.
- 
- 
+  ![Average Age of Player By Location](https://user-images.githubusercontent.com/94933743/156069589-13827964-fff1-4a21-b2d9-d980ccb3bb98.png)
+
  Querry
+ ```
   SELECT
       DISTINCT location,
       ROUND(avg(age) over (partition by location),2) as max_age_player,
@@ -132,13 +133,13 @@ JOIN
       `cohort2_Mysql_project.player_info`
        ORDER BY 
        location;
-     
+```     
 # Q5:What s the total number of wins & loss in retained players & not retained players?
 We came to know that total wins of retained players are 330047 & total wins of not retained players are 79459.
 Total number of loss in retained player are 329708 and not retained players are 79759.
 
-
 Querry
+```
 SELECT 
 COUNT(player_id) total_players, 
 SUM(total_analsis.total_wins) total_wins,
@@ -197,4 +198,4 @@ JOIN
 ON win_loss_table.player_id = retention_table.player_id
 Order by 3 desc ) total_analsis
 Group By retention_status;
-
+```

@@ -53,6 +53,7 @@ Given the data above, we observed that from the trendline, overall, the retentio
 # Q2: Do players with rolling 30-day retention come from specific regions?
 In this analsis it looks like this game is equally famous in all the locations because we could see a huge difference in numbers.
 Location with Retention
+
 ![Africa, Asia, Europe, North America, Oceania…](https://user-images.githubusercontent.com/94933743/156069409-204e4d98-3edf-4f16-bbd8-4ff7fdd2f332.png)
 
 ```
@@ -122,9 +123,8 @@ JOIN
 ```   
  
  # Q4: What is the average age of player for this game?
-  The average age of playe is in 20s.
-  ![Average Age of Player By Location](https://user-images.githubusercontent.com/94933743/156069589-13827964-fff1-4a21-b2d9-d980ccb3bb98.png)
-
+  The average age of players are in 20s.
+  ![SUM of total_players and AVERAGE of age](https://user-images.githubusercontent.com/94933743/156072688-b5fa4231-bf2d-4ba5-9780-bc52e5594a2f.png)
  Querry
  ```
   SELECT

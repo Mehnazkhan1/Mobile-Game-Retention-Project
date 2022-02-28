@@ -214,3 +214,6 @@ ON win_loss_table.player_id = retention_table.player_id
 Order by 3 desc ) total_analsis
 Group By retention_status;
 ```
+
+##Conclusion
+AS a conclusion we can see that game is popular among all the locations and people who play it more are in their 20's. We had a limited data so our analysis are limited. Retention status is consistant but at the end it has a big drop. Which could be caused by different elements either game is too easy for the players or too too tough or their is not enough interesting elements in the game for certain age groups. So people join and get bored of it.

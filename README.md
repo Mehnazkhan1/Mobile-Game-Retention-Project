@@ -16,6 +16,7 @@ The SQL table should be including the folloing columns:
 
 # Q1: Is 30-day rolling retention increasing or decreasing over the lifecycle of the game?
 
+![Retention Increase Or Decrease Status ](https://user-images.githubusercontent.com/94933743/156066008-40ee3c85-2e56-4326-b7cc-c617d585d102.png)
 
 Querry:
 SELECT

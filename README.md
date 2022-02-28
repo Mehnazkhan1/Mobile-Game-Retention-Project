@@ -77,6 +77,9 @@ ORDER BY
       players DESC;
 ```  
  # Q 3:Do players with rolling 30-day retention spend more?
+ According to our analysis people who retained have spend more on game as compare to those players who have not retained.
+ ![Total Spend of Retained   Non Retained Players](https://user-images.githubusercontent.com/94933743/156071986-56cb5e16-2410-423e-8ff1-0261d6a681ab.png)
+
 Querry
 ----
 ```
@@ -135,6 +138,8 @@ JOIN
        location;
 ```     
 # Q5:What s the total number of wins & loss in retained players & not retained players?
+![Total Wins   Loss of Retained   Non-Retained layers](https://user-images.githubusercontent.com/94933743/156071449-46725b28-8867-4184-b716-51e03d85c35c.png)
+
 We came to know that total wins of retained players are 330047 & total wins of not retained players are 79459.
 Total number of loss in retained player are 329708 and not retained players are 79759.
 

@@ -53,8 +53,6 @@ We excluded the last 30 days of the year from our analysis because those who joi
 Given the data above, we observed that from the trendline, overall, the retention rate was relatively consistent throughout the year(Average 65.46%). From a growth perspective, while the retention rate is stable in the trendline, the growth hasn't significantly increased since the Q1. There appear to be a few noticeable peaks in the retained player count (e.g. day 55 & 277), but it quickly adjusted back to the average line. The result may be a signal to remind us, perhaps, it's time to reshift our foucs back on Long-term retention and YOY growth strategies.
 
 # Q2: Do players with rolling 30-day retention come from specific regions?
-In this analsis it looks like this game is equally famous in all the locations because we could see a huge difference in numbers.
-Location with Retention
 
 ![image](https://user-images.githubusercontent.com/94933743/156236702-358f7e86-797b-4c72-b1d4-5dac194d45d5.png)
 
@@ -80,6 +78,13 @@ GROUP BY
 ORDER BY
       players DESC;
 ```  
+
+As indicated by the visualizations provided, we have a total of 28859 people with rolling 30-day retention. The highest retention player number is located in South America(4863), followed by North America(4855) and Oceania(4832).
+
+In this analysis it looks like this game is equally famous in all the locations since the percentage of the differences between the highest player region amount and the lowest is less than 3%..
+
+To sum up the indication, the region doesn't matter. Although there are some days we could see total retained player's differences in the year, the result would always regress to the reference value if we look at the pictures from a quarter to quarter basis.
+
  # Q 3:Do players with rolling 30-day retention spend more?
  According to our analysis people who retained have spend more on game as compare to those players who have not retained.
  ![Total Spend of Retained   Non Retained Players](https://user-images.githubusercontent.com/94933743/156071986-56cb5e16-2410-423e-8ff1-0261d6a681ab.png)

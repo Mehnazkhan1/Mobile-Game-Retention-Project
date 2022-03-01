@@ -56,7 +56,8 @@ Given the data above, we observed that from the trendline, overall, the retentio
 In this analsis it looks like this game is equally famous in all the locations because we could see a huge difference in numbers.
 Location with Retention
 
-![Africa, Asia, Europe, North America, Oceania…](https://user-images.githubusercontent.com/94933743/156069409-204e4d98-3edf-4f16-bbd8-4ff7fdd2f332.png)
+![image](https://user-images.githubusercontent.com/94933743/156236702-358f7e86-797b-4c72-b1d4-5dac194d45d5.png)
+
 
 ```
 SELECT
